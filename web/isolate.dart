@@ -1,5 +1,7 @@
 import 'dart:isolate';
 
+// Example isolate just takes int values and outputs the value + 1
+
 void main (List args, dynamic mainThread) {
   if (mainThread is SendPort) {
     ReceivePort receivePort = new ReceivePort();
